@@ -17,6 +17,9 @@
 		2A52EEC42E01249C006D1C0B /* api_project_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EEC32E01249C006D1C0B /* api_project_3Tests.swift */; };
 		2A52EECE2E01249C006D1C0B /* api_project_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EECD2E01249C006D1C0B /* api_project_3UITests.swift */; };
 		2A52EED02E01249C006D1C0B /* api_project_3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EECF2E01249C006D1C0B /* api_project_3UITestsLaunchTests.swift */; };
+		2A52EEDD2E0124C3006D1C0B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EEDC2E0124C3006D1C0B /* HomeVC.swift */; };
+		2A52EEDF2E0124D7006D1C0B /* DeailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EEDE2E0124D7006D1C0B /* DeailedVC.swift */; };
+		2A52EEE12E0124F3006D1C0B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EEE02E0124F3006D1C0B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		2A52EEC92E01249C006D1C0B /* api-project-3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "api-project-3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A52EECD2E01249C006D1C0B /* api_project_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api_project_3UITests.swift; sourceTree = "<group>"; };
 		2A52EECF2E01249C006D1C0B /* api_project_3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api_project_3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A52EEDC2E0124C3006D1C0B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2A52EEDE2E0124D7006D1C0B /* DeailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeailedVC.swift; sourceTree = "<group>"; };
+		2A52EEE02E0124F3006D1C0B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				2A52EEAB2E012499006D1C0B /* SceneDelegate.swift */,
 				2A52EEAD2E012499006D1C0B /* ViewController.swift */,
 				2A52EEAF2E012499006D1C0B /* Main.storyboard */,
+				2A52EEDE2E0124D7006D1C0B /* DeailedVC.swift */,
+				2A52EEE02E0124F3006D1C0B /* TableViewCell.swift */,
+				2A52EEDC2E0124C3006D1C0B /* HomeVC.swift */,
 				2A52EEB52E01249C006D1C0B /* Assets.xcassets */,
 				2A52EEB72E01249C006D1C0B /* LaunchScreen.storyboard */,
 				2A52EEBA2E01249C006D1C0B /* Info.plist */,
@@ -262,9 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A52EEB42E012499006D1C0B /* api_project_3.xcdatamodeld in Sources */,
+				2A52EEDD2E0124C3006D1C0B /* HomeVC.swift in Sources */,
 				2A52EEAE2E012499006D1C0B /* ViewController.swift in Sources */,
 				2A52EEAA2E012499006D1C0B /* AppDelegate.swift in Sources */,
 				2A52EEAC2E012499006D1C0B /* SceneDelegate.swift in Sources */,
+				2A52EEE12E0124F3006D1C0B /* TableViewCell.swift in Sources */,
+				2A52EEDF2E0124D7006D1C0B /* DeailedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
