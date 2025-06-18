@@ -29,6 +29,7 @@ class HomeVC: UIViewController ,UITableViewDelegate ,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                 let SB = UIStoryboard(name: "Main", bundle: nil)
                 let detailedVC = SB.instantiateViewController(withIdentifier: "DeailedVC") as! DeailedVC
+        let MapviewVC = SB.instantiateViewController(withIdentifier: "map") as! Map_ViewVC
                 let dict = self.jsondata[indexPath.row] as! NSDictionary
         detailedVC.stringusername = (dict["username"] as? String)!
         detailedVC.stringphone   = (dict["phone"] as? String)!
@@ -36,10 +37,28 @@ class HomeVC: UIViewController ,UITableViewDelegate ,UITableViewDataSource {
         detailedVC.stringwebsite = (dict["website"] as? String)!
         detailedVC.stringname = (dict["name"] as? String)!
         self.address = dict["address"] as? NSDictionary
+        
         detailedVC.stringstreet = (self.address!["street"] as? String)!
+        
+        detailedVC.passedStreet = (self.address!["street"] as? String)!
+        
         detailedVC.stringsuite   = (self.address!["suite"] as? String)!
         detailedVC.stringzipcode = (self.address!["zipcode"] as? String)!
         detailedVC.stringcity    = (self.address!["city"] as? String)!
+        
+        detailedVC.passedCity    = (self.address!["city"] as? String)!
+        self.geo = self.address!["geo"] as? NSDictionary
+        print(self.geo,"\\\\\\\\\\\\\\\\\\\\\\\\\\")
+        detailedVC.passedLat = (self.geo!["lat"] as? String)!
+        detailedVC.passedLong = (self.geo!["lng"] as? String)!
+        
+        
+        
+        
+        
+        
+        
+        
         
         navigationController?.pushViewController(detailedVC, animated: true)
         
@@ -58,6 +77,7 @@ class HomeVC: UIViewController ,UITableViewDelegate ,UITableViewDataSource {
 
     
     var address:NSDictionary?
+    var geo:NSDictionary?
     @IBOutlet weak var mytableview: UITableView!
     var jsondata = NSArray()
     override func viewDidLoad() {

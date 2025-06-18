@@ -32,6 +32,11 @@ class DeailedVC: UIViewController {
     
     
     
+    var passedLat       = ""
+    var passedLong      = ""
+    var passedStreet    = ""
+    var passedCity      = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = stringname
@@ -51,6 +56,17 @@ class DeailedVC: UIViewController {
     }
     
 
+    @IBAction func GetDirection(_ sender: Any) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let mapVC = sb.instantiateViewController(withIdentifier: "map") as! Map_ViewVC
+        mapVC.passedLat     = passedLat
+        mapVC.passedLong    = passedLong
+        mapVC.passedStreet  = passedStreet
+        mapVC.passedCity    = passedCity
+        
+        navigationController?.pushViewController(mapVC, animated: true)
+    }
     /*
     // MARK: - Navigation
 
